@@ -1,4 +1,4 @@
-import { StatusBar, StyleSheet, Text, Image, View } from "react-native";
+import { StyleSheet, Text, Image, View } from "react-native";
 import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
@@ -6,6 +6,7 @@ import {
 import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
 import { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 
 export default function WelcomeScreen() {
     const ring1padding = useSharedValue(0);
